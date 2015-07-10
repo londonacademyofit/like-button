@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Easy 'Like' Button with Firebase | a JavaScript Tutorial by the London Academy of IT</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/custom.css">
+    
+    </head>
+    
+    <body>
+    
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/">Example: Blogpost 'Like' Buttons</a></h1>
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+        
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="active"><a href="/">Home</a></li>
+            </ul>
+          </section>
+        </nav>
+        
+        <div class="hero">
+            <h1>Example Blog Site</h1>
+        </div>
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <p>This site is an example, built to accompany [link to tutorial]. It uses the <a href="https://foundation.zurb.com/" target="_blank">Foundation framework by Zurb</a> for its grid system, typography, menu bar, etc.</p>
+            </div>
+        </div><!--.row-->
+        
+        <div class="row">
+            <div class="small-12 columns">
+            
+                <div class="row post" id="p001">
+                    <div class="small-5 medium-3 columns">
+                        <img src="https://placehold.it/500x400">
+                    </div>
+                    <div class="small-7 medium-9 columns">
+                        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        <button class="tiny button radius" onclick="likePost('p001')">Like</button>&nbsp;<span class="like-count"></span>
+                        <p>Cupcake ipsum dolor sit amet chupa chups gummies liquorice sugar plum. Fruitcake cake topping pudding icing sweet croissant. <a href="#">Sweet souffle jelly. &raquo;</a></p>
+                    </div>
+                </div><!--.row .post-->
+            
+                <div class="row post" id="p002">
+                    <div class="small-5 medium-3 columns">
+                        <img src="https://placehold.it/500x400">
+                    </div>
+                    <div class="small-7 medium-9 columns">
+                        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        <button class="tiny button radius" onclick="likePost('p002')">Like</button>&nbsp;<span class="like-count"></span>
+                        <p>Cupcake ipsum dolor sit amet chupa chups gummies liquorice sugar plum. Fruitcake cake topping pudding icing sweet croissant. <a href="#">Sweet souffle jelly. &raquo;</a></p>
+                    </div>
+                </div><!--.row .post-->
+            
+                <div class="row post" id="p003">
+                    <div class="small-5 medium-3 columns">
+                        <img src="https://placehold.it/500x400">
+                    </div>
+                    <div class="small-7 medium-9 columns">
+                        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        <button class="tiny button radius" onclick="likePost('p003')">Like</button>&nbsp;<span class="like-count"></span>
+                        <p>Cupcake ipsum dolor sit amet chupa chups gummies liquorice sugar plum. Fruitcake cake topping pudding icing sweet croissant. <a href="#">Sweet souffle jelly. &raquo;</a></p>
+                    </div>
+                </div><!--.row .post-->
+            
+                <div class="row post" id="p004">
+                    <div class="small-5 medium-3 columns">
+                        <img src="https://placehold.it/500x400">
+                    </div>
+                    <div class="small-7 medium-9 columns">
+                        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        <button class="tiny button radius" onclick="likePost('p004')">Like</button>&nbsp;<span class="like-count"></span>
+                        <p>Cupcake ipsum dolor sit amet chupa chups gummies liquorice sugar plum. Fruitcake cake topping pudding icing sweet croissant. <a href="#">Sweet souffle jelly. &raquo;</a></p>
+                    </div>
+                </div><!--.row .post-->
+            
+            </div>
+        </div><!--.row-->
+        
+        <footer>
+            <p>&copy; <a href="">The London Academy of IT</a>
+        </footer>
+        
+        <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+        <script src="js/like-button.js"></script>
+        
+    </body>
+
+</html>
