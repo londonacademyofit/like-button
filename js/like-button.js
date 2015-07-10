@@ -19,7 +19,7 @@ function getLikeCount(postID) {
     
     var thisPostRef = new Firebase(firebaseURL + postID + '/like-count/');
     
-    thisPostRef.on('value', function(snapshot) {
+    thisPostRef.once('value', function(snapshot) {
         
         console.log( postID + ' value:', snapshot.val() );
         
@@ -64,9 +64,13 @@ function likePost(id) {
             }, function(error) {
                 
               if (error) {
-                console.log("Data could not be saved." + error);
+                  
+                console.log('Data could not be saved:' + error);
+              
               } else {
-                console.log("Data saved successfully.");
+              
+                console.log('Data saved successfully');
+              
               }
             
             });
