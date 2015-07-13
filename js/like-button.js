@@ -50,7 +50,7 @@ function likePost(id) {
     // get current number of likes here, so we can increment if any exist
     postRef.child('like-count').once('value', function(snapshot){
         
-        console.log( 'current likes:', snapshot.val() );
+        console.log( 'snapshot.val():', snapshot.val() );
         
         var currentLikes = snapshot.val() ? snapshot.val() : 0;
         
